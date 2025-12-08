@@ -40,18 +40,19 @@ h1 {
   font-family: "Jetbrains Mono";
   font-weight: 900;
   margin: 0;
-  font-size: 2.0rem;
+  font-size: 2.3rem;
   color: var(--stg_highlight);
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-weight: 900;
+  font-size: 1.8rem;
   color: var(--stg_highlight);
 }
 
 h3 {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
     margin-bottom: 0.3rem;
 }
 
@@ -74,7 +75,7 @@ a:hover {
 button {
   display: inline-block;
   width: 100%;
-  padding: 10px 25px;
+  padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -83,7 +84,7 @@ button {
   border: none;
   border-radius: 100px;
   box-shadow: 0 6px #295c3e;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   animation: pulse 2s infinite;
   /* text-shadow: var(--button-text-outline) */
 }
@@ -108,12 +109,17 @@ button:active {
     }
 }
 
+.logo 
+{
+    width: 10rem;
+}
+
 .center-box
 {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 25rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
 }
@@ -125,6 +131,22 @@ button:active {
     align-items: center;
 }
 
+.header-text
+{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sub-header-text
+{
+    color: var(--stg_light);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
 .content-category
 {
     padding-bottom: 1rem;
@@ -133,4 +155,40 @@ button:active {
 .content-element
 {
     padding-bottom: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .header-text
+    {
+        margin-left: 0rem;
+        align-items: center;
+    }
+
+    .header-text h1
+    {
+        font-size: 1.8rem;
+    }
+
+    .sub-header-text
+    {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .center-box
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
 }
