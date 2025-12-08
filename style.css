@@ -32,14 +32,13 @@ body {
 h1,
 h2,
 h3 {
+  font-family: "Jetbrains Mono";
   font-weight: 900;
   margin: 0;
 }
 
 h1 {
-  font-family: "Jetbrains Mono";
   font-weight: 900;
-  margin: 0;
   font-size: 2.3rem;
   color: var(--stg_highlight);
 }
@@ -53,7 +52,7 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+  color: var(--stg_light);
 }
 
 p {
@@ -84,7 +83,9 @@ button {
   border: none;
   border-radius: 100px;
   box-shadow: 0 6px #295c3e;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-family: "Jetbrains Mono";
+  font-weight: 900;
   animation: pulse 2s infinite;
   /* text-shadow: var(--button-text-outline) */
 }
